@@ -1,0 +1,30 @@
+
+<html>
+ <head>
+
+ 	<meta charset='utf-8'>
+ 	<script>
+ 	 function evento(){
+ 	 	var resl=document.getElementById("optUF").value;
+ 	 	alert("Muito Bem! Você escolheu o estado UF: "+resl);
+ 	 }
+ 	</script>
+ </head>
+ <body>
+ <h1>JavaScript - Array</h1>
+ 	<form name='form1'>
+ 		<br>
+ 	<script>
+ 	 var estados={AC:'Acre',AL:'Alagoas',AP:'Amapá',AM:'Amazonas',BA:'Bahia',CE:'Ceará',DF:'Distrito Federal',ES:'Espírito Santo',GO:'Goiás',MA:'Maranhão',MT:'Mato Grosso',MS:'Mato Grosso do Sul',MG:'Minas Gerais',PA:'Pará',PB:'Paraíba',PR:'Paraná',PE:'Pernambuco',PI:'Piauí',RJ:'Rio de Janeiro',RN:'Rio Grande do Norte',RS:'Rio Grande do Sul',RO:'Rondônia',RR:'Roraima',SC:'Santa Catarina',SP:'São Paulo',SE:'Sergipe',TO:'Tocantins'};
+ 	 // var texto = "<select name=UF>"; variável para auxiliar na formação da string"
+ 	 window.document.write("<select name=UF id=optUF>");
+ 	 for (uf in estados){
+ 	 	window.document.write("<option value="+uf+">"+estados[uf]+"</option>");
+ 	 }
+ 	 window.document.write("</select");
+ 	 </script>
+ 	
+ </form>
+ <input type="button" value="ok" onclick="evento()"/>
+ </body>
+</html>
